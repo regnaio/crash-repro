@@ -41,7 +41,7 @@ peerConnection.ondatachannel = ev => {
 	dataChannel.onopen = ev => {
 		console.log('dataChannel.onopen()');
 
-		peerConnection.close();
+		peerConnection.close(); // Close RTCPeerConnection immediately after RTCDataChannel opens
 	};
 	dataChannel.onmessage = ev => {
 		console.log(`dataChannel.onmessage(): ev.data: ${ev.data}`);
@@ -134,6 +134,7 @@ dataChannel.onMessage(msg => {
 dataChannel.onClosed(() => {
 	console.log('dataChannel.onClosed()');
 
+  // These lines setting callbacks appear to cause the crash
 	peerConnection.onStateChange(state => {});
 	peerConnection.onSignalingStateChange(state => {});
 	peerConnection.onGatheringStateChange(state => {});
