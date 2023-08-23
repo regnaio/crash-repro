@@ -78,8 +78,6 @@ peerConnection.onsignalingstatechange = ev => {
 ```js
 const { default: nodeDataChannel } = await import('node-datachannel');
 
-const { performance } = await import('node:perf_hooks');
-
 const iceServers = [
 	{
 		hostname: 'stun:stun1.l.google.com',
