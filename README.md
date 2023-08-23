@@ -12,7 +12,7 @@
 
 ---
 
-## 1. Open a new Chrome browser window and open its DevTools Console. Please note that opening a new Chrome window seems to increase the probability of reproducing the crash, though this may not be true.
+## 1. Open a new Chrome browser window and open its DevTools Console. Please note that opening a new Chrome window before running the following steps seems to increase the probability of reproducing the crash (though this may not be true).
 
 ## 2. Run the following snippet in a Chrome browser DevTools Console:
 ```js
