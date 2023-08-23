@@ -1,5 +1,13 @@
 # Steps to reproduce a [crash in `node-datachannel`](https://github.com/murat-dogan/node-datachannel/issues/176)
 
+## Environment
+- Browser
+  - Windows Chrome `Version 115.0.5790.173 (Official Build) (64-bit)`
+- Node
+  - `node-datachannel` version: 0.4.3
+  - Docker image `node:18.16.1-bullseye-slim` running on DigitalOcean droplet (`Debian do-kube-1.27.2-do.0`)
+  - `uname -a` inside Docker container: `Linux do-sfo3-0-dev-swarm-drone-demand-node-pool-f9ed0 6.1.0-0.deb11.6-amd64 #1 SMP PREEMPT_DYNAMIC Debian 6.1.15-1~bpo11+1 (2023-03-16) x86_64 GNU/Linux`
+
 ## 1. Open a new Chrome browser window and open its DevTools Console. Please note that opening a new Chrome window seems to increase the probability of reproducing the crash, though this may not be true.
 
 ## 2. Run the following snippet in a Chrome browser DevTools Console:
