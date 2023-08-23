@@ -134,7 +134,7 @@ dataChannel.onMessage(msg => {
 dataChannel.onClosed(() => {
 	console.log('dataChannel.onClosed()');
 
-  // These lines setting callbacks appear to cause the crash
+	// These lines setting callbacks appear to cause the crash
 	peerConnection.onStateChange(state => {});
 	peerConnection.onSignalingStateChange(state => {});
 	peerConnection.onGatheringStateChange(state => {});
