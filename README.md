@@ -146,7 +146,7 @@ const answer = await peerConnection.createAnswer();
 await peerConnection.setLocalDescription(answer);
 ```
 
-## 6. In the Chrome DevTools Console logs, copy the JSON stringified object after ``. This is the final answer.
+## 6. In the Chrome DevTools Console logs, copy the JSON stringified object after `COPY LAST ONE PRINTED AS THE FINAL ANSWER: `. This is the final answer.
 
 ## 7. Paste the final answer into the `answer` variable below and run this snippet in the same Node REPL:
 ```js
