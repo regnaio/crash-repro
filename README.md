@@ -8,7 +8,7 @@
 - Node
   - `node-datachannel` version: 0.4.3
   - Docker image `node:18.16.1-bullseye-slim` running on DigitalOcean droplet (`Debian do-kube-1.27.2-do.0`)
-  - `uname -a` inside Docker container: `Linux do-sfo3-0-dev-swarm-drone-demand-node-pool-f9ed0 6.1.0-0.deb11.6-amd64 #1 SMP PREEMPT_DYNAMIC Debian 6.1.15-1~bpo11+1 (2023-03-16) x86_64 GNU/Linux`
+  - `uname -a` inside Docker container inside Kuberenetes Pod with `hostNetwork: true`: `Linux do-sfo3-0-dev-swarm-drone-demand-node-pool-f9ed0 6.1.0-0.deb11.6-amd64 #1 SMP PREEMPT_DYNAMIC Debian 6.1.15-1~bpo11+1 (2023-03-16) x86_64 GNU/Linux`
 
 ---
 
